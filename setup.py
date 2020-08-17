@@ -9,11 +9,11 @@ setuptools.setup(
     author="Robert E. Wessinger III",
     author_email="robert.wessinger@outlook.com",
     description="A small package to help with formatting and error handling",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/rob-wess/python-format-module.git",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
