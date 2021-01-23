@@ -1,2 +1,8 @@
 # python-format-module
-Small package to help with formatting and error handling
+Small Python3 package that provides responsive task results
+
+## Usage
+Import and call the Task class with a 'message', result', and title
+
+## Demo
+![](https://raw.githubusercontent.com/rob-wess/python-format-module/master/demo.png)
