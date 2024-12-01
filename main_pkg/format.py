@@ -1,8 +1,14 @@
-#!/usr/bin/python
-
 import os
 
+# Module-level constants for formatting
+SUCCESS = "\033[0;32mSUCCESS\033[0m"   # Green
+FAIL = "\033[0;31mFAIL\033[0m"         # Red
+WARNING = "\033[0;33mWARNING\033[0m"   # Yellow
+BLANK = "\033[0;39mNULL\033[0m"        # White
+INFO = "\033[0;34mINFO\033[0m"         # Blue
+
 class Task:
+
     def __init__(self, message, result, title):
         self.message = message
         self.result = result
@@ -21,8 +27,3 @@ class Task:
 
     def PrintTitle(self):
         print("\n\033[1m" + self.title + "\033[0m\n")
-        
-success = "\033[0;32mSUCCESS\033[0m"        # Green
-fail = "\033[0;31mFAIL\033[0m"           # Red
-warning = "\033[0;33mWARNING\033[0m"        # Yellow
-blank = "\033[0;39mNULL\033[0m"        # White

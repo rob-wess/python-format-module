@@ -1,29 +1,24 @@
 #!/usr/bin/python3
-
-from main_pkg import format
-
-# Formatting Variables
-success = "\033[0;32mSUCCESS\033[0m"   # Green
-fail = "\033[0;31mFAIL\033[0m"         # Red
-warning = "\033[0;33mWARNING\033[0m"   # Yellow
-blank = "\033[0;39mNULL\033[0m"        # White
+from main_pkg.format import Task, SUCCESS, FAIL, WARNING, INFO, BLANK
 
 title = 'System Checks'
-heading = format.Task('', '', title);
+heading = Task('', '', title);
 heading.PrintTitle();
 
-## First Task (success)
+## Successful Task
 message = 'Check system for something'
-task = format.Task(message, success, title);
+task = Task(message, SUCCESS, title);
 task.PrintMessage()
 
-## Second Task (fail)
+## Failed Task
 message = 'Check something else'
-task = format.Task(message, fail, title);
+task = Task(message, FAIL, title);
 task.PrintMessage()
 
-## Third Task
-task = format.Task('Foo Bar', warning, '');
+## Warning
+task = Task('Foo Bar', WARNING, '');
 task.PrintMessage()
 
-
+## Info
+Task('Informational', INFO, '').PrintMessage()
+Task('Informational', BLANK, '').PrintMessage()

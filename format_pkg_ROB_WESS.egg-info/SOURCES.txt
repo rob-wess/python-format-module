@@ -1,6 +1,0 @@
-README.md
-setup.py
-format_pkg_ROB_WESS.egg-info/PKG-INFO
-format_pkg_ROB_WESS.egg-info/SOURCES.txt
-format_pkg_ROB_WESS.egg-info/dependency_links.txt
-format_pkg_ROB_WESS.egg-info/top_level.txt
